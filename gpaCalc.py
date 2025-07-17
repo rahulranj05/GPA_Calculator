@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="GPA Calculator", layout="centered")
 
 # Title and Author
-st.title("📊 GPA Calculator (SRM University)")
+st.title("📊 GPA Calculator (SRM - ECE Dept. SEM - 3)")
 st.caption("- by Rahul Ranjan ECE - DS - A")
 
 # Grade to Grade Point Map
