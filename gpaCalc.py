@@ -4,8 +4,8 @@ import streamlit as st
 st.set_page_config(page_title="GPA Calculator", layout="centered")
 
 # Title and Author
-st.title("📊 GPA Calculator (SRM University)")
-st.caption("**- by Rahul Ranjan ECE - DS - A**")
+st.title("GPA Calculator (SRM University)")
+st.caption("- by Rahul Ranjan ECE - DS - A")
 
 # Grade to Grade Point Map
 def get_grade_point(letter_grade):
@@ -31,7 +31,7 @@ subjects = {
 }
 
 st.markdown("---")
-st.subheader("Enter your Grades")
+st.subheader("Enter Your Grades")
 
 grades = {}
 for subject, credits in subjects.items():
@@ -53,7 +53,6 @@ if st.button("Calculate GPA"):
         total_weighted_points += grade_point * credits
 
     gpa = total_weighted_points / total_credits
-    st.success(f"🎓 Your GPA is: **{gpa:.3f}**")
+    st.success(f"Your GPA is: {gpa:.3f}")
 
 st.markdown("---")
-st.markdown("<div style='text-align: center; color: gray;'>Made with ❤️ by Rahul Ranjan ECE - DS - A</div>", unsafe_allow_html=True)
